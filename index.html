@@ -10,6 +10,8 @@
     :root{--bg:#F9F9F8;--ink:#1A1A1A;--muted:#1A1A1A;--rule:#EBEBEB;--sw:240px;--mono:'Inter',sans-serif}
     html{scroll-behavior:smooth}
     body{background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:12px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased}
+    a{color:var(--ink);text-decoration:none;transition:color 0.1s}
+    a:hover{color:#B8B8B8}
     .layout{display:flex;min-height:100vh}
 
     /* sidebar */
@@ -20,8 +22,8 @@
     .sidebar nav a{text-decoration:none;color:#B8B8B8;font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0;transition:color 0.1s;border:none}
     .sidebar nav a:hover,.sidebar nav a.active{color:var(--ink)}
     .sf{margin-top:auto;display:flex;flex-direction:column;gap:0.4rem}
-    .sf a{text-decoration:none;color:var(--muted);font-size:11px;transition:color 0.1s}
-    .sf a:hover{color:var(--ink)}
+    .sf a{text-decoration:none;color:var(--ink);font-size:11px;transition:color 0.1s}
+    .sf a:hover{color:#B8B8B8}
 
     /* main */
     main{margin-left:var(--sw);padding:2.5rem 3rem 8rem 3rem;width:100%}
