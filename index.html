@@ -4,13 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rachel Ung</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#F9F9F8;--ink:#111;--muted:#888;--rule:#D8D8D4;--sw:240px;--mono:'IBM Plex Mono',monospace}
+    :root{
+  --bg:#F9F9F8;
+  --ink:#111;
+  --muted:#888;
+  --rule:#D8D8D4;
+  --sw:240px;
+  --mono:'Inter',sans-serif;
+}
     html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:12px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased}
-    .layout{display:flex;min-height:100vh}
+   body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--mono);
+    font-size:12px;
+    line-height:1.65;
+    font-weight:400;
+    letter-spacing:-0.01em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+    .sn,
+.hero h1,
+.pt,
+.er{
+    font-weight:500;
+}
+
+.hero p,
+#about p,
+.proj p,
+.el,
+.skl li,
+.intro{
+    font-weight:400;
+}
+
+.sidebar nav a,
+.sl,
+.sgl,
+.tag,
+.cl-label{
+    letter-spacing:0.06em;
+}
 
     /* sidebar */
     .sidebar{width:var(--sw);position:fixed;top:0;left:0;bottom:0;padding:2.5rem 2rem;display:flex;flex-direction:column;border-right:1px solid var(--rule);background:var(--bg);z-index:10}
