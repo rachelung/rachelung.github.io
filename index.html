@@ -3,60 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RACHEL UNG</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <title>Rachel Ung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-  --bg:#F9F9F8;
-  --ink:#111;
-  --muted:#888;
-  --rule:#D8D8D4;
-  --sw:240px;
-  --mono:'Inter',sans-serif;
-}
+    :root{--bg:#F9F9F8;--ink:#1A1A1A;--muted:#1A1A1A;--rule:#EBEBEB;--sw:240px;--mono:'Inter',sans-serif}
     html{scroll-behavior:smooth}
-   body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--mono);
-    font-size:12px;
-    line-height:1.65;
-    font-weight:400;
-    letter-spacing:-0.01em;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-}
-    .sn,
-.hero h1,
-.pt,
-.er{
-    font-weight:500;
-}
-
-.hero p,
-#about p,
-.proj p,
-.el,
-.skl li,
-.intro{
-    font-weight:400;
-}
-
-.sidebar nav a,
-.sl,
-.sgl,
-.tag,
-.cl-label{
-    letter-spacing:0.06em;
-}
+    body{background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:12px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased}
+    .layout{display:flex;min-height:100vh}
 
     /* sidebar */
     .sidebar{width:var(--sw);position:fixed;top:0;left:0;bottom:0;padding:2.5rem 2rem;display:flex;flex-direction:column;border-right:1px solid var(--rule);background:var(--bg);z-index:10}
-    .sn{font-size:12px;font-weight:400;letter-spacing:0.01em;line-height:1.4;margin-bottom:0.25rem}
+    .sn{font-size:12px;font-weight:600;letter-spacing:0.01em;line-height:1.4;margin-bottom:0.25rem}
     .sjp{font-size:11px;color:var(--muted);margin-bottom:2.5rem;font-weight:300}
     .sidebar nav{display:flex;flex-direction:column;gap:0}
-    .sidebar nav a{text-decoration:none;color:var(--muted);font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0;transition:color 0.1s;border:none}
+    .sidebar nav a{text-decoration:none;color:#B8B8B8;font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0;transition:color 0.1s;border:none}
     .sidebar nav a:hover,.sidebar nav a.active{color:var(--ink)}
     .sf{margin-top:auto;display:flex;flex-direction:column;gap:0.4rem}
     .sf a{text-decoration:none;color:var(--muted);font-size:11px;transition:color 0.1s}
@@ -68,13 +29,13 @@
     /* hero */
     .hero{padding-bottom:2.5rem;border-bottom:1px solid var(--rule);margin-bottom:3rem}
     .ey{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;font-weight:400}
-    .hero h1{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;letter-spacing:0.02em;line-height:1.2;margin-bottom:0.3rem}
+    .hero h1{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:0.02em;line-height:1.2;margin-bottom:0.3rem}
     .hjp{font-size:12px;color:var(--muted);font-weight:300;font-style:italic;margin-bottom:1.5rem}
     .hero p{font-size:12px;color:var(--ink);max-width:620px;line-height:1.8;font-weight:300}
 
     /* sections */
     section{margin-bottom:3.5rem}
-    .sl{font-size:11px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--rule)}
+    .sl{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--rule)}
 
     /* about */
     #about p{font-size:12px;color:var(--ink);max-width:680px;margin-bottom:0.9rem;line-height:1.8;font-weight:300}
@@ -84,7 +45,7 @@
     .proj:first-of-type{border-top:1px solid var(--rule)}
     .proj-left{grid-column:1}
     .proj-right{grid-column:2;text-align:right}
-    .pt{font-size:12px;font-weight:400;letter-spacing:0.01em;margin-bottom:0.5rem;display:block}
+    .pt{font-size:12px;font-weight:600;letter-spacing:0.01em;margin-bottom:0.5rem;display:block}
     .py{font-size:11px;color:var(--muted);font-weight:300;white-space:nowrap}
     .proj p{font-size:11px;color:var(--muted);max-width:600px;margin-bottom:0.75rem;line-height:1.7;font-weight:300}
     .tags{display:flex;flex-wrap:wrap;gap:0.35rem}
@@ -94,7 +55,7 @@
     .ei{display:grid;grid-template-columns:160px 1fr;gap:0 2rem;padding:1.25rem 0;border-bottom:1px solid var(--rule)}
     .ei:first-of-type{border-top:1px solid var(--rule)}
     .ed{font-size:11px;color:var(--muted);font-weight:300;padding-top:0.1rem;line-height:1.6}
-    .er{font-size:12px;font-weight:400;margin-bottom:0.15rem;letter-spacing:0.01em}
+    .er{font-size:12px;font-weight:600;margin-bottom:0.15rem;letter-spacing:0.01em}
     .eo{font-size:11px;color:var(--muted);font-weight:300;margin-bottom:0.5rem}
     .el{font-size:11px;color:var(--muted);line-height:1.7;list-style:none;font-weight:300}
     .el li{margin-bottom:0.2rem;padding-left:1.2rem;position:relative}
@@ -102,7 +63,7 @@
 
     /* skills */
     .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:2rem}
-    .sgl{font-size:11px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem}
+    .sgl{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem}
     .skl{list-style:none;display:flex;flex-direction:column;gap:0.25rem}
     .skl li{font-size:11px;color:var(--ink);font-weight:300}
 
@@ -111,7 +72,7 @@
     .cl{display:flex;flex-direction:column;gap:0.6rem}
     .cl a{text-decoration:none;display:grid;grid-template-columns:80px 1fr;gap:0 1rem;font-size:11px;color:var(--ink);transition:color 0.1s;font-weight:300}
     .cl a:hover{color:var(--muted)}
-    .cl-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding-top:0.1rem;font-weight:400}
+    .cl-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding-top:0.1rem;font-weight:600}
 
     /* mobile */
     @media(max-width:700px){
